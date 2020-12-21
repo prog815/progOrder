@@ -3,8 +3,8 @@
 ## Подключение библиотеки
 
 <code>
-! pip install git+https://github.com/prog815/portfOptim
+! pip install git+https://github.com/prog815/progOrder
 
-import portfOptim
+import progOrder
 </code>
 
