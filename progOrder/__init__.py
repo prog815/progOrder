@@ -4,16 +4,19 @@ def getBuySellForData(ohlc, orderLifeLen = 50, dSL = 0.001, dTP = 0.0005, SP = 0
     Расчет ордеров на покупку и продажу
     
     Аргументы:
-    ohlc - матрица Open,High,Low,Close
-    orderLifeLen - время жизни ордера
-    dSL - доля на stop-loss (относительно close[-1])
-    dTP - доля на take-profit (относительно close[-1])
-    SP - своп абсолютно
+        ohlc - матрица Open,High,Low,Close
+        orderLifeLen - время жизни ордера
+        dSL - доля на stop-loss (относительно close[-1])
+        dTP - доля на take-profit (относительно close[-1])
+        SP - своп абсолютно
     
     Вовращает:
-    buy,sell - два вектора (покупка и продажа):
-        1 - удачный ордер
-        0 - неудачный ордер
+        buy,sell - два вектора (покупка и продажа):
+            1 - удачный ордер
+            0 - неудачный ордер
+        
+    Пример:
+        b,s = getBuySellForData(ohlc,dSL=0.01)
     """
     rows = ohlc.shape[0]
 
