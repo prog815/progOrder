@@ -18,6 +18,8 @@ def getBuySellForData(ohlc, orderLifeLen = 50, dSL = 0.001, dTP = 0.0005, SP = 0
     Пример:
         b,s = getBuySellForData(ohlc,dSL=0.01)
     """
+    import numpy as np
+    
     rows = ohlc.shape[0]
 
     Open = ohlc[:,0]
