@@ -1,4 +1,5 @@
 def kach(PR,TR,dTP,dSL):
+    import numpy as np
     return np.mean(PR*(TR*dTP-(1-TR)*dSL))
 
 # ----------------------------------------------------
