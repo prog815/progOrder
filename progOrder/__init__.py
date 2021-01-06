@@ -1,3 +1,19 @@
+def kach(PR,TR,dTP,dSL):
+    return np.mean(PR*(TR*dTP-(1-TR)*dSL))
+
+# ----------------------------------------------------
+
+def bs2y(b,s): 
+    return b*2+s
+
+# ----------------------------------------------------
+
+def y2bs(y):
+    s = y % 2
+    b = ( y - s ) // 2
+    return (b,s)
+
+# ----------------------------------------------------
 
 def getBuySellForData(ohlc, orderLifeLen = 50, dSL = 0.001, dTP = 0.0005, SP = 0.07):
     """
