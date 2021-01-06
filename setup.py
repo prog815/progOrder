@@ -5,7 +5,7 @@ import progOrder
 
 setup(
     name='progOrder',
-    version='0.0.3',
+    version='0.0.4',
     description='Библиотека оптимизации ордеров ',
     packages=find_packages(),
     long_description=open(join(dirname(__file__), 'README.md')).read(),
